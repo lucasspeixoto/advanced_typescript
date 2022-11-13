@@ -1,0 +1,26 @@
+{
+  "name": "intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "ts-node src/index.ts",
+    "server:basics": "tsc-watch --noClear -p tsconfig.json --onSuccess \"node ./lib/basics.js\"",
+    "server:intermediate": "tsc-watch --noClear -p tsconfig.json --onSuccess \"node ./lib/intermediate.js\"",
+    "server:advanced": "tsc-watch --noClear -p tsconfig.json --onSuccess \"node ./lib/advanced.js\"",
+    "server:expert": "tsc-watch --noClear -p tsconfig.json --onSuccess \"node ./lib/expert.js\"",
+    "server:super": "tsc-watch --noClear -p tsconfig.json --onSuccess \"node ./lib/super.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.8.4"
+  }
+}
