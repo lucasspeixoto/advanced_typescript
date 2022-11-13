@@ -387,7 +387,7 @@ const invalid = {
 invalid.double(); */
 
 //! Generic Constraints
-type NameFields = { firstName: string; lastName: string };
+/* type NameFields = { firstName: string; lastName: string };
 function addFullName<T extends NameFields>(obj: T): T & { fullName: string } {
   return {
     ...obj,
@@ -401,4 +401,4 @@ const john = addFullName({
     lastName: 'Trump'
 });
 
-console.log(john.email)
+console.log(john.email) */

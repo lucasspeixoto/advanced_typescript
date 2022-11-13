@@ -280,7 +280,7 @@ strLiteral = "hello";
 let templateLiteral: `Example: ${string}`;
 templateLiteral = 'Example: hello'; */
 
-type CSSValue =
+/* type CSSValue =
   //implies px
   | number
   // number + px|em|rem
@@ -294,5 +294,5 @@ function size(input: CSSValue) {
 
 size(123);
 size("100px");
-size("12em");
+size("12em"); */
 //size("12ex"); //Error
